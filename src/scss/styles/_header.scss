@@ -1,0 +1,25 @@
+header {
+    background-color: $header-color;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        @include flex-center;
+        justify-content: space-between;
+        padding: 16px 0;
+    }
+
+    .menu {
+        @include flex-center;
+        li {
+            font-weight: bold;
+            margin-left: 24px;
+
+            a {
+                color: $text-color-white;
+                text-decoration: none;
+            }
+        }
+    }
+}
